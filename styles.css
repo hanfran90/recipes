@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: yellow;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.flex-container > header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: azure;
+}
+
+header > h1 {
+  font-size: 3rem;
+  background-color: hotpink;
+  padding: 20px;
+  text-align: center;
+}
+
+header > h2 {
+  font-size: 1rem;
+  background-color: hotpink;
+  padding: 20px;
+  text-align: center;
+}
+
+.flex-container > nav {
+  display: flex;
+  padding: 10px;
+  background-color: aqua;
+}
+
+nav > a {
+  display: flex;
+  justify-content: space-between;
+  color: hotpink;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: azure;
+  border: 2px solid hotpink;
+  transition: all 0.5s ease;
+}
+
+nav > a:hover,
+nav > a:active {
+  display: flex;
+  color: azure;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  background-color: hotpink;
+  text-align: center;
+  align-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  background-color: aqua;
+}
+
+#ingredients {
+  background-color: azure;
+  padding: 50px;
+}
